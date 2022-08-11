@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FoodMenu</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+	<p>
+		<div class="header">
+			<div class="text-center">
+				<span class="heading"><b>THE NON-VEG COUNTER<br></b></span>
+				Uncover our greatest delicasy of menu. We are glad to serve you.<br>
+				Unleash the Food master within you. Happy eating :)
+			</div>
+		</div>
+	</p>
+
+	<p style="margin-left: 20px; font-family: Lucida Handwriting; font-size: 18px;">
+		<strong>
+			Our mouth-watering dishes:
+		</strong>	
+	</p>
+
+	<p>
+		<div class="tab">
+		  <button class="tablinks" onclick="openitem(event, 'Grilled Chicken')" id="defaultOpen">Grilled Chicken</button>
+		  <button class="tablinks" onclick="openitem(event, 'Mutton Korma')">Mutton Korma</button>
+		  <button class="tablinks" onclick="openitem(event, 'Malabar Fish Biryani')">Malabar Fish Biryani</button>
+		  <button class="tablinks" onclick="openitem(event, 'Tandoori Lamb Chops')">Tandoori Lamb Chops</button>
+		</div>
+
+		<div id="Grilled Chicken" class="tabcontent">
+			<p>
+			  <h3><b>Grilled Chicken</b></h3>
+			  	<p>Delicious and mouth watering roasted tender chicken with selective herbs and spices.</p>
+			  	<figure>
+			  		<img src="images/gril.jpg" alt="fish.jpg" align="right" style="width:200px">
+			  		<p><b>Rs 120</b></p>
+			  	</figure>
+			  	<p id="ff" hidden>Grilled Chicken</p>
+			  	<p id="pff" hidden>120</p>
+		  		<button type="button" class="btn btn-primary btn-sm" onclick="csub('c1')">_</button>
+			  	&nbsp;
+			  	<span class="text-black" id="c1">0</span>
+			  	&nbsp;
+			  	<button type="button" class="btn btn-primary btn-sm" onclick="cadd('c1')">+</button>
+			  	&nbsp;
+			  	<button name="Item" type="button" value="Fish Fry" class="btn btn-info" onclick="addcart('addff','ff','pff')">Add to cart</button><span id="addff"></span>
+		    </p>
+
+		</div>
+
+		<div id="Mutton Korma" class="tabcontent">
+		  <h3><b>Mutton Korma</b></h3>
+		  <p>Spicy hot curry prepared with minced mutton liberally seasoned with aromatic spice mix.</p>
+		  	<figure>
+		  		<img src="images/korma.jpg" alt="fish.jpg" align="right" style="width:200px; height: 180px; margin-right:5px">
+		  		<figcaption><b>Rs. 140</b></figcaption>
+		  	</figure>
+		  	<p id="fr" hidden>Mutton Korma</p>
+			<p id="pfr" hidden>140</p>
+		  	<button type="button" class="btn btn-primary btn-sm" onclick="csub('c2')">_</button>
+		  	&nbsp;
+		  	<span class="text-black" id="c2">0</span>
+		  	&nbsp;
+		  	<button type="button" class="btn btn-primary btn-sm" onclick="cadd('c2')">+</button>
+		  	&nbsp;
+		  	<button type="submit" class="btn btn-info" value="Fried Rice" onclick="addcart('addfr','fr','pfr')">Add to cart</button><span id="addfr"></span> 
+		  </p> 
+		</div>
+
+		<div id="Malabar Fish Biryani" class="tabcontent">
+		  <h3><b>Malabar Fish Biryani</b></h3>
+		  <p>Traditional Malabar fish biriyani ,Made with jeera rice comes with marinated fried fish ,served with raita and pickle.</p>
+		  	<figure>
+		  		<img src="images/biryani.jpg" alt="biryani.jpg" align="right" style="width:200px; height:150px">
+		  		<figcaption><b>Rs. 150</b></figcaption>
+		  	</figure>
+		  	<p id="fr" hidden>Malabar Fish Biryani</p>
+			<p id="pfr" hidden>150</p>
+		  	<button type="button" class="btn btn-primary btn-sm" onclick="csub('c2')">_</button>
+		  	&nbsp;
+		  	<span class="text-black" id="c2">0</span>
+		  	&nbsp;
+		  	<button type="button" class="btn btn-primary btn-sm" onclick="cadd('c2')">+</button>
+		  	&nbsp;
+		  	<button type="submit" class="btn btn-info" value="Fried Rice" onclick="addcart('addfr','fr','pfr')">Add to cart</button><span id="addfr"></span> 
+		  </p> 
+		</div>
+
+		
+		<div id="Tandoori Lamb Chops" class="tabcontent">
+		  <h3><b>Tandoori Lamb Chops</b></h3>
+		  <p>Juicy lamb chops marinated in rosemary.</p>
+		  	<figure>
+		  		<img src="images/lamb.jpg" alt="cc.jpg" align="right" style="width:200px; height: 170px; margin-right:10px">
+		  		<figcaption><b>Rs. 150</b></figcaption>
+		  	</figure>
+		  	<p id="cc" hidden>Tandoori Lamb Chops</p>
+			<p id="pcc" hidden>150</p>
+		  	<button type="button" class="btn btn-primary btn-sm" onclick="csub('c4')">_</button>
+		  	&nbsp;
+		  	<span class="text-black" id="c4">0</span>
+		  	&nbsp;
+		  	<button type="button" class="btn btn-primary btn-sm" onclick="cadd('c4')">+</button>
+		  	&nbsp;
+		  	<button type="button" class="btn btn-info" value="Chicken" onclick="addcart('addcc','cc','pcc')">Add to cart</button><span id="addcc"></span>
+		  </p>
+		</div>
+
+		<div class="clearfix"></div>
+	</p>
+	<p>
+		<button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-primary btn-lg" style="margin-left: 20px;">Checkout</button>
+		<a href="mini1.html"><button class="btn btn-primary btn-lg">Back</button></a>
+	</p>
+
+	<div id="id01" class="modal">
+	  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <div class="modal-content">
+	    <div class="container">
+	      <div class="review">
+				<p>
+					<h2><strong>Please Review Your order and confirm it.</strong><br></h2>
+					
+						<p id="disp"><b><span style="color: red;">ADD SOMETHING TO YOUR CART</span></b></p>
+	
+					<button type="button" onclick="document.getElementById('id01').style.display='none'"class="btn btn-success more">Add more Items</button>
+				</p>
+			</div>
+			<hr>
+			<div class="form">
+				<p>
+					<form id="final">
+						<h2>Enter Delivery Details</h2><br>
+						<label for="address"><b>Address:</b></label>
+			    		<input type="text" placeholder="Enter your Address" name="address" id="address" required><br>
+			    		<br>
+			    		<label for="phone"><b>Mobile: </b></label>
+			    		<input type="text" placeholder="Enter your Mobile number" name="phone" id="phone" maxlength="10" required><br>
+			    		<br>
+			    		<input type="checkbox" id="confirm" name="confirm" value="yes" required>
+						I Agree that all of the information provided is <b>TRUE</b> and <b>Best of my Knowledge</b></input><br>
+			    		<div class="clearfix">
+			    			<button type="button" class="ordernow" onclick="confirmid()">Order Now</button>
+					        <button type="button" onclick="document.getElementById('id01').style.display='none'"class="cancelbtn1">Cancel</button>
+					    </div>
+					</form>
+					<p id="msg"></p>
+				</p>
+			</div>
+
+	      <div class="clearfix">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="menu.js"></script>		
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+window.open("./mini1.html");

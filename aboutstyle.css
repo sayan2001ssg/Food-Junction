@@ -1,0 +1,27 @@
+div.a{
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+#quote {
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+.savi{
+	float: left;
+	margin-left: 360px;
+	color: white;
+}
+.sayan{
+	float: right;
+	margin-right: 350px;
+	color: white;
+}
+body{
+	background-image: url("images/back_about.jpg");
+	background-position: center;
+}
+img{
+	border-radius: 50%;
+}

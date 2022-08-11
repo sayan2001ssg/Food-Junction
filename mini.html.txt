@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Food Junction</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="">
+	
+</head>
+<body>
+	<div class="hero">
+		<div class="navBar">
+			<img src="images/logo2.png" width="300px"  >
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="http://localhost:81/project/feed.php" target="_blank">FeedBack</a></li>
+				<li><a href="about.html" target="_blank">About</a></li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<div class="rest">
+			<div class="restaurents">
+				<h2> Bengali Meal </h2>
+				<img src="images\bengali1.jpg" width="400px" height="300px">
+				<br>
+				<br>
+				<a href="menu.html" target="_blank">Explore more</a>
+			</div>
+			<div class="restaurents">
+				<h2> Punjabi Thali </h2>
+				<img src="images\punjabi.jpg" width="400px" height="300px">
+				<br>
+				<br>
+				<a href="menu1.html" target="_blank">Explore more</a>
+			</div>
+			<div class="restaurents">
+				<h2> South Indian Food </h2>
+				<img src="images\south1.jpg" width="400px" height="300px">
+				<br>
+				<br>
+				<a href="menu2.html" target="_blank">Explore more</a>
+			</div>
+			<div class="restaurents">
+				<h2> Non Vegetarian Counter </h2>
+				<img src="images\nonveg.jpg"  width="400px" height="300px">
+				<br>
+				<br>
+				<a href="menu3.html" target="_blank">Explore more</a>
+			</div>
+			<div class="restaurents">
+				<h2>Fast Food corner </h2>
+				<img src="images\chinese.jpg"  width="400px" height="300px">
+				<br>
+				<br>
+				<a href="menu4.html" target="_blank">Explore more</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert('The account already exists');
